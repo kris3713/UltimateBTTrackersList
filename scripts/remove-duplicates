@@ -8,14 +8,14 @@ declare -A counts=()
 
 # Count occurrences of each line
 for line in "${content[@]}"; do
-  ((counts[$line]++))
+    ((counts[$line]++))
 done
 
 # Find and print duplicate lines
 for line in "${!counts[@]}"; do
-  if [[ ${counts[$line]} -gt 1 ]]; then
-    echo "Duplicate found: $line"
-  fi
+    if [[ ${counts[$line]} -gt 1 ]]; then
+        echo "Duplicate found: $line"
+    fi
 done
 
 # Write unique lines to the file
