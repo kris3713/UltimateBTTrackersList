@@ -1,5 +1,5 @@
 # UltimateTrackerList
-A combination of various tracker lists all combined into ONE tracker list file.
+A combination of various BitTorrent tracker lists all combined into ONE BitTorrent tracker list file.
 
 ## URLs currently being scraped
 
