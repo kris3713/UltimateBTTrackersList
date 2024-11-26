@@ -1,9 +1,9 @@
 name: Update Trackers
 
 on:
-  push:
-    branches:
-      - main  # Change this if your default branch is different
+  schedule:
+    - cron: '0 */12 * * *'  # Runs every 12 hours
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   update-trackers:
