@@ -26,7 +26,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.name "GitHub Actions Bot"
+          git config --local user.name "GitHub Action Bot"
           git config --local user.email "action@github.com"
           git add ultimate_trackers.txt
           git commit -m "Updated \`ultimate_trackers.txt\`\n\nThis commit was made by a bot with no free-will."
