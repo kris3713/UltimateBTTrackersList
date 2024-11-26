@@ -5,13 +5,11 @@ $content = Get-Content ./ultimate_trackers.txt
 
 # Group the content by identical lines, filter for groups with more than one item (duplicates),
 # and extract the duplicate lines
-$content | Group-Object | Where-Object {$_.Count -gt 1} | Select-Object -ExpandProperty Name | ForEach-Object {
-    Write-Host "Duplicate found: $_"
-}
+@(($content | Group-Object).Where({ $_.Count -gt 1 }).Name).ForEach({ Write-Host "Duplicate found: $_" })
 
 # Create a new array with unique lines from the original content,
 # separating each line with an empty line for better readability
-$sortedContent = $content | Select-Object -Unique | ForEach-Object { "$_`n" }
+$sortedContent = @($content | Select-Object -Unique).ForEach({ "$_`n" })
 
 # Overwrite the original file with the sorted, unique content
 $sortedContent | Set-Content ./ultimate_trackers.txt -Force
