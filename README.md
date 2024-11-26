@@ -1,5 +1,5 @@
 # UltimateBTTrackersList
-A WIP project that scrapes various lists of BitTorrent trackers can concatenates them into ONE list of BitTorrent trackers.
+A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers can concatenates them into ONE list of BitTorrent trackers.
 
 ## Links
 
