@@ -14,4 +14,4 @@ if [ -n "$duplicates" ]; then
 fi
 
 # Remove duplicates and save unique values back to trackers.txt
-printf "%s\n" "${content[@]}" | sort -u > trackers.txt
+printf "%s\n" "${content[@]}" | sort -u > ./ultimate_trackers.txt
