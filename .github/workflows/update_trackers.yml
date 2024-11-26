@@ -1,0 +1,33 @@
+name: Update Trackers
+
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is different
+
+jobs:
+  update-trackers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch trackers
+        run: |
+          curl -s https://cf.trackerslist.com/all.txt -o trackers1.txt
+          curl -s https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt -o trackers2.txt
+          curl -s https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt -o trackers3.txt
+          cat trackers1.txt trackers2.txt trackers3.txt > ultimate_trackers.txt
+
+      - name: Remove duplicates
+        run: |
+          awk '!seen[$0]++' ultimate_trackers.txt > temp.txt && mv temp.txt ultimate_trackers.txt
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "action@github.com"
+          git add ultimate_trackers.txt
+          git commit -m "Updated \`ultimate_trackers.txt\`\n\nThis commit was made by a bot with no free-will."
+          git push origin main
