@@ -1,17 +1,26 @@
 #!/usr/bin/env pwsh
 
 # Get the content of the "ultimate_trackers.txt" file
-$content = Get-Content "./ultimate_trackers.txt"
+$content = Get-Content ./ultimate_trackers.txt
 
-# Group the content by identical lines, filter for groups with more than one item (duplicates), 
+# Group the content by identical lines, filter for groups with more than one item (duplicates),
 # and extract the duplicate lines
-$content | Group-Object | Where-Object {$_.Count -gt 1} | Select-Object -ExpandProperty Name | ForEach-Object { 
-    Write-Host "Duplicate found: $_" 
+$content | Group-Object | Where-Object {$_.Count -gt 1} | Select-Object -ExpandProperty Name | ForEach-Object {
+    Write-Host "Duplicate found: $_"
 }
 
-# Create a new array with unique lines from the original content, 
+# Create a new array with unique lines from the original content,
 # separating each line with an empty line for better readability
 $sortedContent = $content | Select-Object -Unique | ForEach-Object { $_; "" }
 
+# Append credits to the top
+$sortedContent = @"
+# Fetched from:
+# https://cf.trackerslist.com/all.txt
+# https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt
+# https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt
+$sortedContent
+"@
+
 # Overwrite the original file with the sorted, unique content
-$sortedContent | Set-Content "./ultimate_trackers.txt" -Force
+$sortedContent | Set-Content ./ultimate_trackers.txt -Force
