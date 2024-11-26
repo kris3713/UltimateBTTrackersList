@@ -9,10 +9,10 @@ A combination of various BitTorrent tracker lists all combined into ONE BitTorre
 
 ## Credits
 
-Thanks to @XIU2 for this tracket list,
+Thanks to @XIU2 for this tracket list.
 * https://cf.trackerslist.com/all.txt
 
-And thanks to @ngosang for these tracker lists,
+And thanks to @ngosang for these tracker lists.
 * https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt
 * https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt
 
