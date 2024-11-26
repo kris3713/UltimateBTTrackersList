@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Read the content of trackers.txt into an array
-mapfile -t content < trackers.txt
+mapfile -t content < ./ultimate_trackers.txt
 
 # Find duplicates
 duplicates=$(printf "%s\n" "${content[@]}" | sort | uniq -d)
