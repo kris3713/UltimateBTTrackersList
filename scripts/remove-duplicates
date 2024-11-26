@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Read the content of trackers.txt into an array
+mapfile -t content < trackers.txt
+
+# Find duplicates
+duplicates=$(printf "%s\n" "${content[@]}" | sort | uniq -d)
+
+# Print duplicates
+if [ -n "$duplicates" ]; then
+    while IFS= read -r line; do
+        echo "Duplicate found: $line"
+    done <<< "$duplicates"
+fi
+
+# Remove duplicates and save unique values back to trackers.txt
+printf "%s\n" "${content[@]}" | sort -u > trackers.txt
