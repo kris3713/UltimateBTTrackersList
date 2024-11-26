@@ -11,5 +11,8 @@ $content = Get-Content ./ultimate_trackers.txt
 # separating each line with an empty line for better readability
 $sortedContent = @($content | Select-Object -Unique).ForEach({ "$_`n" })
 
+# Remove the extra line
+$sortedContent | Select-Object -Skip 1 | Out-String
+
 # Overwrite the original file with the sorted, unique content
 $sortedContent | Set-Content ./ultimate_trackers.txt -Force
