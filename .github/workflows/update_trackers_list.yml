@@ -28,6 +28,7 @@ jobs:
         run: |
           git clone "https://github.com/FlawlessCasual17/UltimateTrackerList"
           cp ./UltimateTrackerList/scripts/remove-duplicates .
+          chmod a+rxw ./remove-duplicates
           bash -c ./remove-duplicates
 
       - name: Commit and push changes
