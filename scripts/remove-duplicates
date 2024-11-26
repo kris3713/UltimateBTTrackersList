@@ -1,22 +1,17 @@
-#!/bin/bash
+#!/usr/bin/env pwsh
 
-# Read the content of the file into an array
-content=($(cat ultimate_trackers.txt))
+# Get the content of the "ultimate_trackers.txt" file
+$content = Get-Content "./ultimate_trackers.txt"
 
-# Create an associative array to count occurrences
-declare -A counts=()
+# Group the content by identical lines, filter for groups with more than one item (duplicates), 
+# and extract the duplicate lines
+$content | Group-Object | Where-Object {$_.Count -gt 1} | Select-Object -ExpandProperty Name | ForEach-Object { 
+    Write-Host "Duplicate found: $_" 
+}
 
-# Count occurrences of each line
-for line in "${content[@]}"; do
-    ((counts[$line]++))
-done
+# Create a new array with unique lines from the original content, 
+# separating each line with an empty line for better readability
+$sortedContent = $content | Select-Object -Unique | ForEach-Object { $_; "" }
 
-# Find and print duplicate lines
-for line in "${!counts[@]}"; do
-    if [[ ${counts[$line]} -gt 1 ]]; then
-        echo "Duplicate found: $line"
-    fi
-done
-
-# Write unique lines to the file
-printf "%s\n" "${content[@]}" | sort -u > ultimate_trackers.txt
+# Overwrite the original file with the sorted, unique content
+$sortedContent | Set-Content "./ultimate_trackers.txt" -Force
