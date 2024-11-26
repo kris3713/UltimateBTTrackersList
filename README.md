@@ -1,2 +1,2 @@
 # UltimateTrackerLisrt
-A combination of various tracker lists all into one file.
+A combination of various tracker lists all into tracker list file.
