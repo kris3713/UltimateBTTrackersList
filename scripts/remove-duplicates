@@ -1,17 +1,22 @@
 #!/bin/bash
 
-# Read the content of trackers.txt into an array
-mapfile -t content < ./ultimate_trackers.txt
+# Read the content of the file into an array
+content=($(cat ultimate_trackers.txt))
 
-# Find duplicates
-duplicates=$(printf "%s\n" "${content[@]}" | sort | uniq -d)
+# Create an associative array to count occurrences
+declare -A counts=()
 
-# Print duplicates
-if [ -n "$duplicates" ]; then
-    while IFS= read -r line; do
-        echo "Duplicate found: $line"
-    done <<< "$duplicates"
-fi
+# Count occurrences of each line
+for line in "${content[@]}"; do
+  ((counts[$line]++))
+done
 
-# Remove duplicates and save unique values back to trackers.txt
-printf "%s\n" "${content[@]}" | sort -u > ./ultimate_trackers.txt
+# Find and print duplicate lines
+for line in "${!counts[@]}"; do
+  if [[ ${counts[$line]} -gt 1 ]]; then
+    echo "Duplicate found: $line"
+  fi
+done
+
+# Write unique lines to the file
+printf "%s\n" "${content[@]}" | sort -u > ultimate_trackers.txt
