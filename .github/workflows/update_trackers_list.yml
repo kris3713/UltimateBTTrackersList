@@ -2,8 +2,8 @@ name: Update Trackers List
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # Runs every 12 hours
-  workflow_dispatch:  # Allows manual triggering of the workflow
+    - cron: '0 */12 * * *' # Runs every 12 hours
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
   update-trackers-list:
@@ -13,26 +13,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Fetching tracker lists
+      - name: Fetching Tracker Lists
         shell: bash
         run: |
-          echo "Fetching tracker lists from:"
-          echo "https://cf.trackerslist.com/all.txt"
-          echo "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt"
-          echo "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt"
-          curl -s "https://cf.trackerslist.com/all.txt" -o ./trackers1.txt
-          curl -s "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt" -o ./trackers2.txt
-          curl -s "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt" -o ./trackers3.txt
-          cat ./trackers1.txt ./trackers2.txt ./trackers3.txt > ./ultimate_trackers.txt
-
-      - name: Remove duplicates
-        run: |
           git clone "https://github.com/FlawlessCasual17/UltimateTrackerList"
+          cp ./UltimateTrackerList/scripts/fetching-tracker-lists .
+          chmod a+rxw ./fetching-tracker-lists
+          exec ./fetching-tracker-lists
+
+      - name: Remove Duplicates
+        shell: bash
+        run: |
           cp ./UltimateTrackerList/scripts/remove-duplicates .
           chmod a+rxw ./remove-duplicates
-          pwsh -noprofile -c ./remove-duplicates
+          exec ./remove-duplicates
 
-      - name: Commit and push changes
+      - name: Commit and Push changes
+        shell: bash
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

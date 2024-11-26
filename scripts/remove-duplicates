@@ -11,16 +11,7 @@ $content | Group-Object | Where-Object {$_.Count -gt 1} | Select-Object -ExpandP
 
 # Create a new array with unique lines from the original content,
 # separating each line with an empty line for better readability
-$sortedContent = $content | Select-Object -Unique | ForEach-Object { $_; "" }
-
-# Append credits to the top
-$sortedContent = @"
-# Fetched from:
-# https://cf.trackerslist.com/all.txt
-# https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt
-# https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt
-$sortedContent
-"@
+$sortedContent = $content | Select-Object -Unique | ForEach-Object { "$_`n" }
 
 # Overwrite the original file with the sorted, unique content
 $sortedContent | Set-Content ./ultimate_trackers.txt -Force

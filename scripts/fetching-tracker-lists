@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Display information about the tracker lists being fetched
+echo "Fetching tracker lists from:"
+echo "https://cf.trackerslist.com/all.txt"
+echo "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt"
+echo "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt"
+
+# Download tracker lists silently (-s flag) and save to temporary files
+curl -s "https://cf.trackerslist.com/all.txt" -o ./trackers1.txt
+curl -s "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt" -o ./trackers2.txt
+curl -s "https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt" -o ./trackers3.txt
+
+# Combine all tracker lists into one ultimate list
+cat ./trackers1.txt ./trackers2.txt ./trackers3.txt > ./ultimate_trackers.txt
+
+# Add a blank line to the first line of "ultimate_trackers.txt"
+sed -i '1i\' ./ultimate_trackers.txt
