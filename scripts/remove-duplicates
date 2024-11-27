@@ -12,4 +12,4 @@ $content = Get-Content ./ultimate_trackers.txt
 $sortedContent = @($content | Select-Object -Unique).ForEach({ "$_`n" })
 
 # Overwrite the original file with the sorted, unique content
-$sortedContent | Set-Content ./ultimate_trackers.txt -Force
+$sortedContent | Select-Object -Skip 1 | Out-String | Set-Content ./ultimate_trackers.txt -Force -NoNewline
