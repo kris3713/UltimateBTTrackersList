@@ -15,14 +15,21 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers can c
 
 ## Credits
 
-Thanks to @XIU2 for this list (`all.txt`).
+```txt
+This project incorporates code from TrackersListCollection,
+licensed under the GNU General Public License version 3,
+and trackerslist, licensed under the GNU General Public License version 2.
 
+ * Copyright (C) 2024 TrackersListCollection Authors
+ * Copyright (C) 2022 trackerslist Authors
+```
+
+For more information about each project's license please visit their associated links.
 * <https://github.com/XIU2/TrackersListCollection>
-
-And thanks to @ngosang for these lists (`trackers_all.txt`, `trackers_all_ip.txt`).
-
 * <https://github.com/ngosang/trackerslist>
 
 ## License
 
-See [here](./LICENSE) for information about this project's license.
+This project is licensed under the **GPL-3.0-or-later** license.
+
+Click [here](./LICENSE) to learn more about this project's license.
