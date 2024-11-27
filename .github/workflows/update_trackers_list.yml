@@ -13,18 +13,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Fetching Tracker Lists
+      - name: Fetching Lists of BT Trackers
         shell: bash
         run: |
-          git clone "https://github.com/FlawlessCasual17/UltimateTrackerList"
-          cp ./UltimateTrackerList/scripts/fetching-tracker-lists .
+          git clone "https://github.com/FlawlessCasual17/UltimateBTTrackersList"
+          cp ./UltimateBTTrackersList/scripts/fetching-tracker-lists .
           chmod a+rxw ./fetching-tracker-lists
           exec ./fetching-tracker-lists
 
-      - name: Remove Duplicates
+      - name: Removing Duplicate URIs
         shell: bash
         run: |
-          cp ./UltimateTrackerList/scripts/remove-duplicates .
+          cp ./UltimateBTTrackersList/scripts/remove-duplicates .
           chmod a+rxw ./remove-duplicates
           exec ./remove-duplicates
 

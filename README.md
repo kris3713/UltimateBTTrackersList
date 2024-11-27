@@ -1,4 +1,5 @@
 # UltimateBTTrackersList
+
 A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers can concatenates them into ONE list of BitTorrent trackers.
 
 ## Links
@@ -8,17 +9,20 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers can c
 
 ## URLs currently being scraped
 
-* https://cf.trackerslist.com/all.txt
-* https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt
-* https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt
+* <https://cf.trackerslist.com/all.txt>
+* <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt>
+* <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt>
 
 ## Credits
 
 Thanks to @XIU2 for this list (`all.txt`).
-* https://github.com/XIU2/TrackersListCollection
+
+* <https://github.com/XIU2/TrackersListCollection>
 
 And thanks to @ngosang for these lists (`trackers_all.txt`, `trackers_all_ip.txt`).
-* https://github.com/ngosang/trackerslist
+
+* <https://github.com/ngosang/trackerslist>
 
 ## License
+
 See [here](./LICENSE) for information about this project's license.
