@@ -2,7 +2,7 @@ name: Update Trackers List
 
 on:
   schedule:
-    - cron: '0 */36 * * *' # Runs every 36 hours (2 days and 12 hours)
+    - cron: '0 */60 * * *' # Runs every 60 hours (2 days and 12 hours)
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
