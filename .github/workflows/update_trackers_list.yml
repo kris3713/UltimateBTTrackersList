@@ -10,29 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Fetching Lists of BT Trackers
         shell: bash
         run: |
-          git clone "https://github.com/FlawlessCasual17/UltimateBTTrackersList"
-          cp ./UltimateBTTrackersList/scripts/fetching-tracker-lists .
+          cp ./scripts/fetching-tracker-lists .
           chmod a+rxw ./fetching-tracker-lists
           exec ./fetching-tracker-lists
 
       - name: Removing Duplicate URIs
         shell: bash
         run: |
-          cp ./UltimateBTTrackersList/scripts/remove-duplicates .
+          cp ./scripts/remove-duplicates .
           chmod a+rxw ./remove-duplicates
           exec ./remove-duplicates
 
       - name: Commit and Push changes
         shell: bash
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add ./ultimate_trackers.txt
-          git commit -m "Updated \`ultimate_trackers.txt\`"
+          git commit -m 'Updated `ultimate_trackers.txt`'
           git push origin main
