@@ -1,8 +1,8 @@
-name: Update Trackers List
+name: 'Update Trackers List'
 
 on:
   schedule:
-    - cron: '0 13 * * 0' # Runs at the end of every week at 1:00 PM (13:00)
+    - cron: '0 13 * * 0' # Runs at the end of every week at 1:00 PM (13:00) UTC
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
@@ -10,24 +10,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: 'Checkout Repository'
+        uses: 'actions/checkout@v4'
+        with: 
+          repository: ${{ github.repository }}
+          token: ${{ github.token }}
 
-      - name: Fetching Lists of BT Trackers
+      - name: 'Fetching Lists of BT Trackers'
         shell: bash
         run: |
           cp ./scripts/fetching-tracker-lists .
           chmod a+rxw ./fetching-tracker-lists
           exec ./fetching-tracker-lists
 
-      - name: Removing Duplicate URIs
+      - name: 'Removing Duplicate URIs'
         shell: bash
         run: |
           cp ./scripts/remove-duplicates .
           chmod a+rxw ./remove-duplicates
           exec ./remove-duplicates
 
-      - name: Commit and Push changes
+      - name: 'Commit and Push changes'
         shell: bash
         run: |
           git config --local user.name 'github-actions[bot]'
