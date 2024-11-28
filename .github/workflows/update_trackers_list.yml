@@ -37,4 +37,4 @@ jobs:
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add ./ultimate_trackers.txt
           git commit -m 'Updated `ultimate_trackers.txt`'
-          git push origin main
+          git push
