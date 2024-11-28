@@ -8,6 +8,10 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 * [Link 2 \(Hosted on a CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@main/ultimate_trackers.txt)
   (Courtesy of JSDelivr)
 
+## Schedule
+
+The workflow to update the list runs at end of every week at 1:00 PM (13:00).
+
 ## URLs currently being scraped
 
 * <https://cf.trackerslist.com/all.txt>
