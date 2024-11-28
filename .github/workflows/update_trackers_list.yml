@@ -36,5 +36,6 @@ jobs:
           git config --local user.name 'github-actions[bot]'
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add ./ultimate_trackers.txt
-          git commit -m 'Updated `ultimate_trackers.txt`'
+          current_time=$(date +'%Y-%m-%d %H:%M:%S')
+          git commit -m "Updated \`ultimate_trackers.txt\` at $current_time"
           git push
