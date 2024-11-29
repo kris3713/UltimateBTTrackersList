@@ -17,9 +17,9 @@ The workflow to update the list runs at end of every week at 1:00 PM (13:00) UTC
 
 ## URLs currently being scraped
 
-* <https://cf.trackerslist.com/all.txt>
 * <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt>
 * <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt>
+* <https://cf.trackerslist.com/all.txt>
 
 ## Credits
 
