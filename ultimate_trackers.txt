@@ -511,4 +511,3 @@ udp://u6.trakx.crim.ist:1337/announce
 udp://www.torrent.eu.org:451/announce
 
 wss://tracker.openwebtorrent.com:443/announce
-
