@@ -4,9 +4,12 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 ## Links
 
-* [Link 1 \(Hosted on GitHub\)](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/main/ultimate_trackers.txt)
-* [Link 2 \(Hosted on a CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@main/ultimate_trackers.txt)
-  (Courtesy of JSDelivr)
+* [Link 1 \(Hosted on GitHub\)](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
+  (master branch)
+* [Link 2 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@master/ultimate_trackers.txt)
+  (master branch)
+* [Link 3 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@HEAD/ultimate_trackers.txt)
+  (HEAD of this repository)
 
 ## Schedule
 
