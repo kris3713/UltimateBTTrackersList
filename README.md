@@ -6,23 +6,19 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 <details>
 <summary>
-
-### Github
-
+Github
 </summary>
 
 * [Link 1](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
   (Updates immediately whenever a new commit is pushed to the `master` branch)
 * [Link 2](https://flawlesscasual17.github.io/UltimateBTTrackersList/ultimate_trackers.txt)
-  (Updates immediately whenever a new commit is pushed to the `master` branch)>
+  (Updates immediately whenever a new commit is pushed to the `master` branch)
 
 </details>
 
 <details>
 <summary>
-
-### JSDelivr CDN
-
+JSDelivr CDN
 </summary>
 
 * [Link 1](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@master/ultimate_trackers.txt)
@@ -34,9 +30,7 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 <details>
 <summary>
-
-### Statically CDN
-
+Statically CDN
 </summary>
 
 * [Link 1](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
@@ -48,9 +42,7 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 <details>
 <summary>
-
-### raw.githack.com CDN
-
+raw.githack.com CDN
 </summary>
 
 * [Link 1](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
