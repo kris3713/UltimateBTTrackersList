@@ -4,22 +4,61 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 ## Links
 
-* [Link 1 \(Hosted on GitHub\)](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
+<details>
+<summary>
+
+### Github
+
+</summary>
+
+* [Link 1](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
   (Updates immediately whenever a new commit is pushed to the `master` branch)
-* [Link 1 \(Hosted on GitHub Pages\)](https://flawlesscasual17.github.io/UltimateBTTrackersList/ultimate_trackers.txt) 
-  (Updates immediately whenever a new commit is pushed to the `master` branch)
-* [Link 3 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@master/ultimate_trackers.txt)
+* [Link 2](https://flawlesscasual17.github.io/UltimateBTTrackersList/ultimate_trackers.txt)
+  (Updates immediately whenever a new commit is pushed to the `master` branch)>
+
+</details>
+
+<details>
+<summary>
+
+### JSDelivr CDN
+
+</summary>
+
+* [Link 1](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@master/ultimate_trackers.txt)
   (Updates after a week whenever a new commit is pushed to the `master` branch)
-* [Link 4 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@HEAD/ultimate_trackers.txt)
+* [Link 2](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@HEAD/ultimate_trackers.txt)
   (Updates immediately whenever a new commit is pushed to the `master` branch)
-* [Link 5 \(Hosted on Statically CDN\)](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
+
+</details>
+
+<details>
+<summary>
+
+### Statically CDN
+
+</summary>
+
+* [Link 1](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
   (Updates after a week whenever a new commit is pushed to the `master` branch)
-* [Link 6 \(Hosted on Statically CDN\)](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
+* [Link 2](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
   (Updates immediately whenever a new commit is pushed to the `master` branch)
-* [Link 7 \(Hosted on raw.githack.com CDN\)](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
+
+</details>
+
+<details>
+<summary>
+
+### raw.githack.com CDN
+
+</summary>
+
+* [Link 1](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
   (Updates after a week whenever a new commit is pushed to the `master` branch)
-* [Link 8 \(Hosted on raw.githack.com CDN\)](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
+* [Link 2](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
   (Updates immediately whenever a new commit is pushed to the `master` branch)
+
+</details>
 
 ## Schedule
 
@@ -43,6 +82,7 @@ and trackerslist, licensed under the GNU General Public License version 2.
 ```
 
 For more information about each project's license please visit their associated links.
+
 * <https://github.com/XIU2/TrackersListCollection>
 * <https://github.com/ngosang/trackerslist>
 
