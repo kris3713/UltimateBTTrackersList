@@ -5,50 +5,42 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 ## Links
 
 <details>
-<summary>
-GitHub
-</summary>
+<summary>GitHub</summary>
 
 * [Link 1](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
-  (Updates immediately whenever a new commit is pushed to the `master` branch)
+  (Updates immediately whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 * [Link 2](https://flawlesscasual17.github.io/UltimateBTTrackersList/ultimate_trackers.txt)
-  (Updates immediately whenever a new commit is pushed to the `master` branch)
+  (Updates immediately whenever the `ultimate_trackers.txt` file in the **`master`**  branch is updated)
 
 </details>
 
 <details>
-<summary>
-JSDelivr CDN
-</summary>
+<summary>JSDelivr CDN</summary>
 
 * [Link 1](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@master/ultimate_trackers.txt)
-  (Updates after a week whenever a new commit is pushed to the `master` branch)
+  (Updates after a week whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 * [Link 2](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@HEAD/ultimate_trackers.txt)
-  (Updates immediately whenever a new commit is pushed to the `master` branch)
+  (Updates immediately whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 
 </details>
 
 <details>
-<summary>
-Statically CDN
-</summary>
+<summary>Statically CDN</summary>
 
 * [Link 1](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
-  (Updates after a week whenever a new commit is pushed to the `master` branch)
+  (Updates after a week whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 * [Link 2](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
-  (Updates immediately whenever a new commit is pushed to the `master` branch)
+  (Updates immediately whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 
 </details>
 
 <details>
-<summary>
-raw.githack.com CDN
-</summary>
+<summary>raw.githack.com CDN</summary>
 
 * [Link 1](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
-  (Updates after a week whenever a new commit is pushed to the `master` branch)
+  (Updates after a week whenever a the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 * [Link 2](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
-  (Updates immediately whenever a new commit is pushed to the `master` branch)
+  (Updates immediately whenever a the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 
 </details>
 
