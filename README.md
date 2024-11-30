@@ -5,17 +5,21 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 ## Links
 
 * [Link 1 \(Hosted on GitHub\)](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
-  (master branch)
-* [Link 1 \(Hosted on GitHub Pages\)](https://flawlesscasual17.github.io/UltimateBTTrackersList/ultimate_trackers.txt)
-  (master branch)
+  (Updates immediately whenever a new commit is pushed to the `master` branch)
+* [Link 1 \(Hosted on GitHub Pages\)](https://flawlesscasual17.github.io/UltimateBTTrackersList/ultimate_trackers.txt) 
+  (Updates immediately whenever a new commit is pushed to the `master` branch)
 * [Link 3 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@master/ultimate_trackers.txt)
-  (master branch)
+  (Updates after a week whenever a new commit is pushed to the `master` branch)
 * [Link 4 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@HEAD/ultimate_trackers.txt)
-  (HEAD of this repository)
+  (Updates immediately whenever a new commit is pushed to the `master` branch)
 * [Link 5 \(Hosted on Statically CDN\)](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
-  (master branch)
+  (Updates after a week whenever a new commit is pushed to the `master` branch)
 * [Link 6 \(Hosted on Statically CDN\)](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
-  (HEAD of this repository)
+  (Updates immediately whenever a new commit is pushed to the `master` branch)
+* [Link 7 \(Hosted on raw.githack.com CDN\)](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
+  (Updates after a week whenever a new commit is pushed to the `master` branch)
+* [Link 8 \(Hosted on raw.githack.com CDN\)](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
+  (Updates immediately whenever a new commit is pushed to the `master` branch)
 
 ## Schedule
 
