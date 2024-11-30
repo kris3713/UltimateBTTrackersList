@@ -12,6 +12,10 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
   (master branch)
 * [Link 4 \(Hosted on JSDelivr CDN\)](https://cdn.jsdelivr.net/gh/FlawlessCasual17/UltimateBTTrackersList@HEAD/ultimate_trackers.txt)
   (HEAD of this repository)
+* [Link 5 \(Hosted on Statically CDN\)](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
+  (master branch)
+* [Link 6 \(Hosted on Statically CDN\)](https://cdn.statically.io/gh/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
+  (HEAD of this repository)
 
 ## Schedule
 
