@@ -6,7 +6,7 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 <details>
 <summary>
-Github
+GitHub
 </summary>
 
 * [Link 1](https://raw.githubusercontent.com/FlawlessCasual17/UltimateBTTrackersList/refs/heads/master/ultimate_trackers.txt)
