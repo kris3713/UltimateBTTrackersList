@@ -18,6 +18,6 @@ for readme in $(fd -t f 'README.md'); do
     # shellcheck disable=SC2252
     if [[ $readme != 'README.md' ]] || [[ $readme != './README.md' ]]; then
         # Modify standard markdown links
-        sed 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' $readme > $newFile
+        sed 's/\[\(.*\)\](\([a-zA-Z]\+:\/\/[^)]*\))$/[\1](\2){:target="_blank"}/g' $readme > $newFile
     fi
 done
