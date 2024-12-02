@@ -1,6 +1,6 @@
 # Stuff to ignore
 !scripts/*
-create-index-md-files
+create-index.md-files
 fetching-tracker-lists
 remove-duplicates
 fd
