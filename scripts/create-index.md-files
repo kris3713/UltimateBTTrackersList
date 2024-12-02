@@ -1,6 +1,9 @@
 #!/usr/bin/env pwsh
 #BASH is a garbage shell
 
+# Create warning
+$warning = "<!-- THIS FILE IS GENERATED! DO NOT DIRECTLY EDIT IT! -->`n"
+
 # Batch create the other "index.md" files
 foreach ($i in (Get-ChildItem -Recurse -Filter 'README.md').FullName) {
     Write-Host "Processing $i"
@@ -18,6 +21,9 @@ foreach ($i in (Get-ChildItem -Recurse -Filter 'README.md').FullName) {
     # Modify angle bracket links
     $modifiedContent = $modifiedContent -replace '<(https?://[^>]+)>', '<$1>{:target="_blank"}'
 
+    # Add warning to top of the file.
+    $modifiedContent = $warning + ($modifiedContent | Out-String)
+
     # Write modified content to new index file
-    $modifiedContent | Set-Content $newFile
+    Set-Content $newFile $modifiedContent
 }
