@@ -1,8 +1,8 @@
-title: 'The Ultimate BitTorrent Trackers List'
 remote_theme: 'pages-themes/cayman@v0.2.0'
 show_downloads: false
 plugins:
   - jekyll-remote-theme
+  - jekyll-target-blank
 
 markdown: kramdown
 kramdown:
