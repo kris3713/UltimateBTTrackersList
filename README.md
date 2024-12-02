@@ -26,8 +26,8 @@ This project incorporates code from TrackersListCollection,
 licensed under the GNU General Public License version 3,
 and trackerslist, licensed under the GNU General Public License version 2.
 
- * Copyright (C) 2024 TrackersListCollection XIU2
- * Copyright (C) 2022 trackerslist ngosang
+    * Copyright (C) 2024 TrackersListCollection XIU2
+    * Copyright (C) 2022 trackerslist ngosang
 ```
 
 For more information about each project's license please visit their associated links.
