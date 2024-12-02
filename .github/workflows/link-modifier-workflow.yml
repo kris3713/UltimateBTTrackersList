@@ -30,7 +30,9 @@ jobs:
     - name: Modify links in README.md
       shell: bash
       run: |
-        cp ./scripts/create-index-md-files .
+        export PATH=$PATH:~/.local/bin
+        echo "\$PATH: $PATH"
+        cp -v ./scripts/create-index-md-files .
         chmod +x ./create-index-md-files
         exec ./create-index-md-files
 

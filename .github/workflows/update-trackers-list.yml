@@ -27,14 +27,14 @@ jobs:
       - name: 'Fetching Lists of BT Trackers'
         shell: bash
         run: |
-          cp ./scripts/fetching-tracker-lists .
+          cp -v ./scripts/fetching-tracker-lists .
           chmod a+rxw ./fetching-tracker-lists
           exec ./fetching-tracker-lists
 
       - name: 'Removing Duplicate URIs'
         shell: bash
         run: |
-          cp ./scripts/remove-duplicates .
+          cp -v ./scripts/remove-duplicates .
           chmod a+rxw ./remove-duplicates
           exec ./remove-duplicates
 
