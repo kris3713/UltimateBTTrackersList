@@ -21,14 +21,6 @@ jobs:
           repository: ${{ github.repository }}
           token: ${{ secrets.TOKEN }}
 
-    - name: 'Install fd'
-      run: |
-        sudo apt-get update && sudo apt-get install -y fd-find
-        # Check if fd already exists, and if it does not, then create it
-        if ! command -v fd &> /dev/null; then
-          sudo ln -v -s $(which fdfind) /bin/fd
-        fi
-
     - name: 'Create index.md files'
       shell: bash
       run: |
@@ -52,8 +44,3 @@ jobs:
         github_token: ${{ secrets.TOKEN }}
         branch: ${{ github.ref }}
 
-    - name: 'Uninstall fd'
-      shell: bash
-      run: |
-        sudo rm $(which fd)
-        sudo apt-get remove -y --purge fd-find

@@ -13,7 +13,6 @@ jobs:
     permissions:
       contents: write
 
-
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
