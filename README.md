@@ -38,9 +38,9 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 <summary>raw.githack.com CDN</summary>
 
 * [Link 1](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/master/ultimate_trackers.txt)
-  (Updates after a week whenever a the `ultimate_trackers.txt` file in the **`master`** branch is updated)
+  (Updates after a week whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 * [Link 2](https://rawcdn.githack.com/FlawlessCasual17/UltimateBTTrackersList/HEAD/ultimate_trackers.txt)
-  (Updates immediately whenever a the `ultimate_trackers.txt` file in the **`master`** branch is updated)
+  (Updates immediately whenever the `ultimate_trackers.txt` file in the **`master`** branch is updated)
 
 </details>
 
