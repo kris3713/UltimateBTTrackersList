@@ -9,6 +9,9 @@ jobs:
   update-trackers-list:
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
     steps:
       - name: 'Checkout Repository'
         uses: 'actions/checkout@v4'
