@@ -18,8 +18,5 @@ for readme in $(fd -t f 'README.md'); do
     if [[ $readme != 'README.md' ]]; then
         # Modify standard markdown links
         sed 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' $readme > $newFile
-
-        # Modify angle bracket links
-        sed -i 's/<\(https\?:\/\/[^>]*\)>$/<\1>{:target="_blank"}/g' $newFile
     fi
 done

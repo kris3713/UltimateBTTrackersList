@@ -1,8 +1,9 @@
-name: Modify README Links
+name: 'Generate index.md files'
 
 on:
-  push:
-    # Trigger on changes to README.md found in any directory
+  push: # Runs on pushes targeting the default branch
+    branches: ["master"]
+    # Trigger on changes to all "README.md" files
     paths: ['**/README.md']
 
   workflow_dispatch:  # Allow manual triggering
@@ -33,9 +34,9 @@ jobs:
       run: |
         export PATH=$PATH:~/.local/bin
         echo "\$PATH: $PATH"
-        cp -v ./scripts/create-index-md-files .
-        chmod +x ./create-index-md-files
-        exec ./create-index-md-files
+        cp -v ./scripts/create-index.md-files .
+        chmod +x ./create-index.md-files
+        exec ./create-index.md-files
 
     - name: 'Commit changes'
       shell: bash
