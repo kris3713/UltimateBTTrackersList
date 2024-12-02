@@ -15,9 +15,9 @@ The workflow to update the list runs at end of every week at 1:00 PM (13:00) UTC
 
 ## URLs currently being scraped
 
-* <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt>
-* <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt>
-* <https://cf.trackerslist.com/all.txt>
+* <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all.txt>{:target="_blank"}
+* <https://cdn.jsdelivr.net/gh/ngosang/trackerslist@master/trackers_all_ip.txt>{:target="_blank"}
+* <https://cf.trackerslist.com/all.txt>{:target="_blank"}
 
 ## Credits
 
@@ -32,11 +32,11 @@ and trackerslist, licensed under the GNU General Public License version 2.
 
 For more information about each project's license please visit their associated links.
 
-* <https://github.com/XIU2/TrackersListCollection>
-* <https://github.com/ngosang/trackerslist>
+* <https://github.com/XIU2/TrackersListCollection>{:target="_blank"}
+* <https://github.com/ngosang/trackerslist>{:target="_blank"}
 
 ## License
 
 This project is licensed under the **GPL-3.0-or-later** license.
 
-Click [here](./LICENSE) to learn more about this project's license.
+Click [here](./LICENSE){:target="_blank"} to learn more about this project's license.
