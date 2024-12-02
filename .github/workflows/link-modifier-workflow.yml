@@ -1,0 +1,49 @@
+name: Modify README Links
+
+on:
+  workflow_dispatch:  # Allow manual triggering
+  push:
+    paths:
+      - 'README.md'  # Trigger on changes to README.md
+      # Trigger on changes to README.md found in any directory
+      - '**/README.md'
+
+jobs:
+  modify-links:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    steps:
+    - name: 'Checkout Repository'
+      uses: 'actions/checkout@v4'
+      with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.TOKEN }}
+
+    - name: 'Install fd'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y fd-find
+        sudo ln -s $(which fd) ~/.local/bin/fd
+
+    - name: Modify links in README.md
+      shell: bash
+      run: |
+        cp ./scripts/create-index-md-files .
+        chmod +x ./create-index-md-files
+        exec ./create-index-md-files
+
+    - name: Commit changes
+      shell: bash
+      run: |
+        git config --local user.name 'github-actions[bot]'
+        git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        git diff --quiet && git diff --staged --quiet || git commit -m "Add target=\"_blank\" to links in README.md"
+
+    - name: Push changes
+      uses: 'ad-m/github-push-action@v0.8.0'
+      with:
+        github_token: ${{ secrets.TOKEN }}

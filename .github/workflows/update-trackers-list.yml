@@ -44,4 +44,8 @@ jobs:
           git add ./ultimate_trackers.txt
           current_time=$(date +'%Y-%m-%d %H:%M:%S')
           git commit -m "Updated \`ultimate_trackers.txt\` at $current_time"
-          git push
+
+      - name: Push changes
+        uses: 'ad-m/github-push-action@v0.8.0'
+        with:
+          github_token: ${{ secrets.TOKEN }}
