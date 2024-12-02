@@ -6,6 +6,7 @@ on:
     paths:
       - '**/ultimate_trackers.txt'
       - '**/README.md'
+      - '**/index.md'
 
   workflow_dispatch: # Allows manual triggering of the workflow
 
