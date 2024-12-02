@@ -8,6 +8,10 @@ on:
       - '**/README.md'
       - '**/index.md'
 
+  workflow_run:
+    workflows: ['update-trackers-list.yml', 'generate-index.md-files.yml']
+    types: ["completed"]
+
   workflow_dispatch: # Allows manual triggering of the workflow
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
