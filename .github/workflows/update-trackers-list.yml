@@ -38,7 +38,7 @@ jobs:
           chmod a+rxw ./remove-duplicates
           exec ./remove-duplicates
 
-      - name: 'Commit and Push changes'
+      - name: 'Commit changes'
         shell: bash
         run: |
           git config --local user.name 'github-actions[bot]'
@@ -47,7 +47,7 @@ jobs:
           current_time=$(date +'%Y-%m-%d %H:%M:%S')
           git commit -m "Updated \`ultimate_trackers.txt\` at $current_time"
 
-      - name: Push changes
+      - name: 'Push changes'
         uses: 'ad-m/github-push-action@v0.8.0'
         with:
           github_token: ${{ secrets.TOKEN }}
