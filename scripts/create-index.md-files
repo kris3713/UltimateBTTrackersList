@@ -15,7 +15,8 @@ for readme in $(fd -t f 'README.md'); do
     echo "Processing $readme"
     newFile="${readme/README/index}"
 
-    if [[ $readme != 'README.md' ]]; then
+    # shellcheck disable=SC2252
+    if [[ $readme != 'README.md' ]] || [[ $readme != './README.md' ]]; then
         # Modify standard markdown links
         sed 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' $readme > $newFile
     fi

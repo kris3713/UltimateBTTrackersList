@@ -39,4 +39,5 @@ For more information about each project's license please visit their associated 
 
 This project is licensed under the **GPL-3.0-or-later** license.
 
-Click [here](https://github.com/FlawlessCasual17/UltimateBTTrackersList/blob/master/LICENSE) to learn more about this project's license.
+Click [here](https://github.com/FlawlessCasual17/UltimateBTTrackersList/blob/master/LICENSE)
+    to learn more about this project's license.
