@@ -1,17 +1,16 @@
 ---
 layout: default
 ---
-
 # The Ultimate BitTorrent Trackers List
 
 A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and concatenates them into ONE list of BitTorrent trackers.
 
 ## Links
 
-* [GitHub](./github-links)
-* [JSDelivr CDN](./jsdelivr-cdn)
-* [Statically CDN](./statically-cdn)
-* [raw.githack.com CDN](./raw.githack.com-cdn)
+* [GitHub](./github_){:target="_blank"}
+* [JSDelivr CDN](./jsdelivr-cdn){:target="_blank"}
+* [Statically CDN](./statically-cdn){:target="_blank"}
+* [raw.githack.com CDN](./raw.githack.com-cdn){:target="_blank"}
 
 ## Schedule
 
@@ -43,4 +42,4 @@ For more information about each project's license please visit their associated 
 
 This project is licensed under the **GPL-3.0-or-later** license.
 
-Click [here](./LICENSE){:target="_blank"} to learn more about this project's license.
+Click [here](https://github.com/FlawlessCasual17/UltimateBTTrackersList/blob/master/LICENSE) to learn more about this project's license.
