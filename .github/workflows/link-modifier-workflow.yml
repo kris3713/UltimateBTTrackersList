@@ -1,7 +1,6 @@
 name: Modify README Links
 
 on:
-
   push:
     # Trigger on changes to README.md found in any directory
     paths: ['**/README.md']
