@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Modify standard markdown links
+sed -i 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' README.md
+
+# Modify angle bracket links
+sed -i 's/<\(https\?:\/\/[^>]*\)>$/<\1>{:target="_blank"}/g' README.md
+
+for readme in $(fd -H -t f README.md); do
+    echo "Processing $readme"
+    newFile="${readme/README/index}"
+
+    # Modify standard markdown links
+    sed -i 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' "$readme"
+
+    # Modify angle bracket links
+    sed -i 's/<\(https\?:\/\/[^>]*\)>$/<\1>{:target="_blank"}/g' "$readme"
+done
