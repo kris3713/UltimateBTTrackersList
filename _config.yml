@@ -3,6 +3,7 @@ show_downloads: false
 plugins:
   - jekyll-remote-theme
 
+markdown: kramdown
 kramdown:
   input: kramdown
   hard_wrap: false
