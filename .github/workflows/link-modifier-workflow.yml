@@ -25,7 +25,11 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y fd-find
-        sudo ln -s $(which fd) ~/.local/bin/fd
+        # Check if fd already exists, and if it does not, then create it
+        if ! command -v ls &> /dev/null; then
+          sudo ln -s $(which fdfind) ~/.local/bin/fd
+        fi
+
 
     - name: Modify links in README.md
       shell: bash
