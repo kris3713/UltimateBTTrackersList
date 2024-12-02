@@ -3,17 +3,14 @@ name: Modify README Links
 on:
 
   push:
-    paths:
-      - 'README.md'  # Trigger on changes to README.md
-      # Trigger on changes to README.md found in any directory
-      - '**/README.md'
+    # Trigger on changes to README.md found in any directory
+    paths: ['**/README.md']
 
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
   modify-links:
     runs-on: ubuntu-latest
-
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
@@ -42,8 +39,9 @@ jobs:
       run: |
         git config --local user.name 'github-actions[bot]'
         git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git add README.md
-        git diff --quiet && git diff --staged --quiet || git commit -m "Add target=\"_blank\" to links in README.md"
+        git add -A
+        current_time=$(date +'%Y-%m-%d %H:%M:%S')
+        git commit -a -m "Created/Updated \`index.md\` files at $current_time"
 
     - name: Push changes
       uses: 'ad-m/github-push-action@v0.8.0'

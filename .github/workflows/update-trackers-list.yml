@@ -10,9 +10,9 @@ on:
 jobs:
   update-trackers-list:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
+
 
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
@@ -51,3 +51,4 @@ jobs:
         uses: 'ad-m/github-push-action@v0.8.0'
         with:
           github_token: ${{ secrets.TOKEN }}
+          branch: ${{ github.ref }}
