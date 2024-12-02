@@ -3,7 +3,7 @@ name: Modify README Links
 on:
   push:
     # Trigger on changes to README.md found in any directory
-    # paths: ['**/README.md']
+    paths: ['**/README.md']
 
   workflow_dispatch:  # Allow manual triggering
 
