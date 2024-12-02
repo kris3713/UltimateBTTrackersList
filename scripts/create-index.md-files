@@ -15,6 +15,8 @@ for readme in $(fd -t f 'README.md'); do
     echo "Processing $readme"
     newFile="${readme/README/index}"
 
+    if test -f $newFile; then rm $newFile; fi
+
     # shellcheck disable=SC2252
     if [[ $readme != 'README.md' ]] || [[ $readme != './README.md' ]]; then
         # Modify standard markdown links
