@@ -1,12 +1,14 @@
 name: Modify README Links
 
 on:
-  workflow_dispatch:  # Allow manual triggering
+
   push:
     paths:
       - 'README.md'  # Trigger on changes to README.md
       # Trigger on changes to README.md found in any directory
       - '**/README.md'
+
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   modify-links:

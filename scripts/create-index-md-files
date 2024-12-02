@@ -1,18 +1,22 @@
 #!/usr/bin/env bash
 
-# Modify standard markdown links
-sed -i 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' README.md
+#
+echo '---' > ./index.md
+echo 'layout: default' >> ./index.md
+echo '---' >> ./index.md
 
-# Modify angle bracket links
-sed -i 's/<\(https\?:\/\/[^>]*\)>$/<\1>{:target="_blank"}/g' README.md
+sed 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' $readme > $newFile
 
-for readme in $(fd -H -t f README.md); do
+# Batch create the other 
+for readme in $(fd -t f 'README.md'); do
     echo "Processing $readme"
     newFile="${readme/README/index}"
 
-    # Modify standard markdown links
-    sed -i 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' "$readme"
+    if [[ $readme != 'README.md' ]]; then
+        # Modify standard markdown links
+        sed 's/\[\(.*\)\](\(.*\))$/[\1](\2){:target="_blank"}/g' $readme > $newFile
 
-    # Modify angle bracket links
-    sed -i 's/<\(https\?:\/\/[^>]*\)>$/<\1>{:target="_blank"}/g' "$readme"
+        # Modify angle bracket links
+        sed 's/<\(https\?:\/\/[^>]*\)>$/<\1>{:target="_blank"}/g' $readme > $newFile
+    fi
 done
