@@ -2,7 +2,7 @@
 #BASH is a garbage shell
 
 # Create warning
-$warning = "<!-- THIS FILE IS GENERATED! DO NOT DIRECTLY EDIT IT! -->`n"
+$warning = "<!-- THIS FILE IS GENERATED! DO NOT DIRECTLY EDIT IT! -->`n`n"
 
 # Batch create the other "index.md" files
 foreach ($i in (Get-ChildItem -Recurse -Filter 'README.md').FullName) {
