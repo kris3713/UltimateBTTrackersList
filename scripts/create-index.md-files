@@ -7,7 +7,7 @@ $warning = "<!-- THIS FILE IS GENERATED! DO NOT DIRECTLY EDIT IT! -->`n`n"
 # Batch create the other "index.md" files
 foreach ($i in (Get-ChildItem -Recurse -Filter 'README.md').FullName) {
     Write-Host "Processing $i"
-    $newFile = $i -replace "README.md", "index.md"
+    $newFile = $i.Replace('README.md', 'index.md')
 
     # Remove existing index file if it exists
     if (Test-Path $newFile) { Remove-Item $newFile -Verbose }
