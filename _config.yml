@@ -1,9 +1,9 @@
-remote_theme: 'pages-themes/minimal@v0.2.0'
+remote_theme: 'pages-themes/cayman@v0.2.0'
 show_downloads: false
 plugins:
   - jekyll-remote-theme
 
-# markdown: kramdown
-# kramdown:
-#   input: kramdown
-#   hard_wrap: false
+markdown: kramdown
+kramdown:
+  input: kramdown
+  hard_wrap: true
