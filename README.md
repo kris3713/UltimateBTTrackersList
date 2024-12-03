@@ -22,10 +22,10 @@ The workflow to update the list runs at end of every week at 1:00 PM (13:00) UTC
 ## Credits
 
 ```txt
-This project incorporates code from TrackersListCollection,
-licensed under the GNU General Public License version 3,
-and trackerslist, licensed under the GNU General Public License version 2.
-
+  This project incorporates code from TrackersListCollection,
+  licensed under the GNU General Public License version 3,
+  and trackerslist, licensed under the GNU General Public License version 2.
+ 
   * Copyright (C) 2024 TrackersListCollection XIU2
   * Copyright (C) 2022 trackerslist ngosang
 ```
