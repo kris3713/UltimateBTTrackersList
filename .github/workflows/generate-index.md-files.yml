@@ -9,7 +9,7 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
-  modify-links:
+  create-links:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
