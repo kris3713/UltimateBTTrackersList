@@ -22,14 +22,15 @@ The workflow to update the list runs at end of every week at 1:00 PM (13:00) UTC
 
 ## Credits
 
-```txt
-  This project incorporates code from TrackersListCollection,
-  licensed under the GNU General Public License version 3,
-  and trackerslist, licensed under the GNU General Public License version 2.
- 
-  * Copyright (C) 2024 TrackersListCollection XIU2
-  * Copyright (C) 2022 trackerslist ngosang
-```
+
+This project incorporates code from TrackersListCollection,
+licensed under the GNU General Public License version 3,
+and trackerslist, licensed under the GNU General Public License version 2.
+
+* Copyright (C) 2024 TrackersListCollection XIU2
+* Copyright (C) 2022 trackerslist ngosang
+
+---
 
 For more information about each project's license please visit their associated links.
 
@@ -40,5 +41,6 @@ For more information about each project's license please visit their associated 
 
 This project is licensed under the **GPL-3.0-or-later** license.
 
-Click [here](https://github.com/FlawlessCasual17/UltimateBTTrackersList/blob/master/LICENSE){:target="_blank"} to learn more about this project's license.
+Click [here](https://github.com/FlawlessCasual17/UltimateBTTrackersList/blob/master/LICENSE){:target="_blank"} 
+  to learn more about this project's license.
 
