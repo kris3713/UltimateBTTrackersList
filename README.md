@@ -11,7 +11,7 @@ A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and c
 
 ## Schedule
 
-The workflow to update the list runs at end of every week at 1:00 PM (13:00) UTC.
+The workflow to update the list runs every Wednesday at 1:00 PM (13:00) UTC.
 
 ## URLs currently being scraped
 
