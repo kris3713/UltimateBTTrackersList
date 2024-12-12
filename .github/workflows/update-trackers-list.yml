@@ -2,8 +2,8 @@ name: 'Update Trackers List'
 
 on:
   schedule:
-    # Runs at the end of every week at 1:00 PM (13:00) UTC
-    - cron: '0 13 * * 0'
+    # Runs every Wednesday at 1:00 PM (13:00) UTC
+    - cron: '0 13 * * 3'
 
   workflow_dispatch: # Allows manual triggering of the workflow
 
