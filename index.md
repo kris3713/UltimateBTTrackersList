@@ -2,7 +2,7 @@
 
 # The Ultimate BitTorrent Trackers List
 
-A <ins>WIP</ins> project that scrapes various lists of BitTorrent trackers and concatenates them into ONE list of BitTorrent trackers.
+A project that scrapes various lists of BitTorrent trackers and concatenates them into ONE list of BitTorrent trackers.
 
 ## Links
 
