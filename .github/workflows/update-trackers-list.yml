@@ -28,14 +28,16 @@ jobs:
         run: |
           cp -v ./scripts/fetching-tracker-lists .
           chmod a+rxw ./fetching-tracker-lists
-          exec ./fetching-tracker-lists
+          eval ./fetching-tracker-lists
+          rm ./fetching-tracker-lists
 
       - name: 'Removing Duplicate URIs'
         shell: bash
         run: |
-          cp -v ./scripts/remove-duplicates .
-          chmod a+rxw ./remove-duplicates
-          exec ./remove-duplicates
+          cp -v ./scripts/remove-duplicates.ps1 .
+          chmod a+rxw ./remove-duplicates.ps1
+          eval ./remove-duplicates.ps1
+          rm ./remove-duplicates.ps1
 
       - name: 'Commit changes'
         shell: bash
@@ -43,8 +45,8 @@ jobs:
           git config --local user.name 'github-actions[bot]'
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add ./ultimate_trackers.txt
-          current_time=$(date +'%Y-%m-%d %H:%M:%S')
-          git commit -m "Updated \`ultimate_trackers.txt\` at $current_time"
+          CURRENT_TIME=$(date +'%Y-%m-%d %H:%M:%S')
+          git commit -m "Updated \`ultimate_trackers.txt\` at $CURRENT_TIME"
 
       - name: 'Push changes'
         uses: 'ad-m/github-push-action@v0.8.0'
