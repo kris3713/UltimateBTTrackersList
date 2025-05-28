@@ -18,10 +18,10 @@ jobs:
 
     steps:
       - name: 'Checkout Repository'
-        uses: 'actions/checkout@v4'
-        with:
-          repository: ${{ github.repository }}
-          token: ${{ secrets.TOKEN }}
+        shell: bash
+        run: |
+          git clone ${{ github.repository }}
+        
 
       - name: 'Fetching Lists of BT Trackers'
         shell: bash
