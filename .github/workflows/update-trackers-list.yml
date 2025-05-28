@@ -18,10 +18,10 @@ jobs:
 
     steps:
       - name: 'Checkout Repository'
-        shell: bash
-        run: |
-          git clone https://github.com/${{ github.repository }}.git
-          cd UltimateBTTrackersList
+        uses: 'actions/checkout@v4'
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.TOKEN }}
 
       - name: 'Fetching Lists of BT Trackers'
         shell: bash
