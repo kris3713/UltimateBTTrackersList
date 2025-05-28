@@ -20,8 +20,8 @@ jobs:
       - name: 'Checkout Repository'
         shell: bash
         run: |
-          git clone ${{ github.repository }}
-        
+          git clone https://github.com/${{ github.repository }}.git
+          cd UltimateBTTrackersList
 
       - name: 'Fetching Lists of BT Trackers'
         shell: bash
