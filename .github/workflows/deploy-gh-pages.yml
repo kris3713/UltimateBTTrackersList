@@ -2,7 +2,7 @@ name: 'Deploy GitHub Pages'
 
 on:
   push:  # Runs on pushes targeting the default branch
-    branches: ["master"]
+    branches: ['master']
     paths:
       - '**/ultimate_trackers.txt'
       - '**/README.md'
