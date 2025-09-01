@@ -2,7 +2,7 @@ name: 'Generate index.md files'
 
 on:
   push: # Runs on pushes targeting the default branch
-    branches: ["master"]
+    branches: ['master']
     # Trigger on changes to all "README.md" files
     paths: ['**/README.md']
 
@@ -12,14 +12,14 @@ jobs:
   create-links:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      GITHUB_TOKEN: "${{ secrets.TOKEN }}" 
 
     steps:
     - name: 'Checkout Repository'
-      uses: 'actions/checkout@v4'
+      uses: actions/checkout@v4
       with:
-          repository: ${{ github.repository }}
-          token: ${{ secrets.TOKEN }}
+          repository: "${{ github.repository }}" 
+          token: "${{ secrets.TOKEN }}" 
 
     - name: 'Create index.md files'
       shell: bash
@@ -39,7 +39,7 @@ jobs:
         git commit -a -m "Created/Updated \`index.md\` files at $CURRENT_TIME"
 
     - name: 'Push changes'
-      uses: 'ad-m/github-push-action@v0.8.0'
+      uses: ad-m/github-push-action@v0.8.0
       with:
-        github_token: ${{ secrets.TOKEN }}
-        branch: ${{ github.ref }}
+        github_token: "${{ secrets.TOKEN }}" 
+        branch: "${{ github.ref }}"
