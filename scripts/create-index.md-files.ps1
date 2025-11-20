@@ -1,5 +1,4 @@
 #!/usr/bin/env pwsh
-#BASH is a garbage shell
 
 # Create warning
 $warning = "<!-- THIS FILE IS GENERATED! DO NOT DIRECTLY EDIT IT! -->`n`n"
