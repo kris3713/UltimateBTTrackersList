@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # Display information about the tracker lists being fetched
 echo 'Fetching tracker lists from:'
