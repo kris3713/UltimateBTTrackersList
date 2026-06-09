@@ -28,7 +28,7 @@ jobs:
         run: |
           cp -v ./scripts/fetching-tracker-lists .
           chmod a+rxw ./fetching-tracker-lists
-          eval ./fetching-tracker-lists
+          ./fetching-tracker-lists
           rm ./fetching-tracker-lists
 
       - name: 'Removing Duplicate URIs'
@@ -36,7 +36,7 @@ jobs:
         run: |
           cp -v ./scripts/remove-duplicates.ps1 .
           chmod a+rxw ./remove-duplicates.ps1
-          eval ./remove-duplicates.ps1
+          ./remove-duplicates.ps1
           rm ./remove-duplicates.ps1
 
       - name: 'Commit changes'
