@@ -14,4 +14,4 @@ curl -s 'https://cf.trackerslist.com/all.txt' -o ./trackers3.txt
 # Add a blank line to the first line of 'ultimate_trackers.txt'
 # and Combine all lists into one ultimate list of BitTorrent trackers
 echo '' > ./ultimate_trackers.txt
-cat ./trackers1.txt ./trackers2.txt ./trackers3.txt >> ./ultimate_trackers.txt
+cat ./custom_trackers.txt ./trackers1.txt ./trackers2.txt ./trackers3.txt >> ./ultimate_trackers.txt
